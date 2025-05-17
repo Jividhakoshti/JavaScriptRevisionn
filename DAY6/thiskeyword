@@ -1,0 +1,44 @@
+// 3. this Keyword Basics
+
+// Problems:
+// 	1.	Create a person object with name, age, and a method introduce() that uses this to return "Hi, I'm John and I'm 25 years old."
+// let person = {
+//     name : "John",
+//     age : 23,
+//     introduce(){
+//         return "Hii, I am " + this.name +" " + "and I am " + this.age+  " "+"years old"
+
+//     }
+// }
+// console.log(person.introduce())
+
+// 	2.	Explain what this refers to in the introduce() method.
+
+// 	3.	Add a nested object inside person (e.g. address with city) and add a method in it using this—observe how this behaves differently.
+// let person = {
+//     name : "John",
+//     age : 23,
+//     introduce(){
+//         return "Hii, I am " + this.name +" " + "and I am " + this.age+  " "+"years old"
+
+//     },
+//     address: {
+//         city : "India",
+//         showcity(){
+//            return this.city
+//         }
+//     }
+// }
+// console.log(person.introduce())
+// console.log(person.address.showcity())
+
+// 	4.	Convert a regular method to an arrow function and explain how this changes
+// let person = {
+//     name : "John",
+//     age : 23,
+//     introduce : ()=>{
+//         return "Hii, I am " + this.name +" " + "and I am " + this.age+  " "+"years old"
+
+//     }
+// }
+// console.log(person.introduce())
