@@ -1,0 +1,45 @@
+// 2. Methods Inside Objects
+
+// Problems:
+// 	1.	Add a method start() to the car object that logs: “Car started”.
+let car = {
+    brand : "Toyota",
+    model : "Corola",
+    Year : 2025,
+    start : function start(){
+        console.log("Started")
+
+    }
+}
+car.start()
+
+// 	2.	Add a method getSummary() that returns a string summarizing the car (e.g. "Brand: Honda, Year: 2020").
+car.getSummary = function () {
+  return "Brand: " + this.brand + ", Year: " + this.year;
+};
+
+console.log(car.getSummary());
+
+// 	3.	Create a calculator object with methods: add(a, b), subtract(a, b), multiply(a, b), divide(a, b).
+let calculator = {
+    add : function add(a,b){
+        return a+b;
+
+    },
+    sub : function sub(a,b){
+        return a-b;
+
+    },
+    mul : function mul(a,b){
+        return a*b;
+    },
+    divide : function divide(a,b){
+        return a/b;
+    }
+}
+console.log(calculator.add(2,3))
+console.log(calculator.sub(7,3))
+console.log(calculator.mul(2,3))
+console.log(calculator.divide(2,3))
+
+
