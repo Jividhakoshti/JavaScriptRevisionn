@@ -1,0 +1,30 @@
+// 1.	Create a car object with properties: brand, model, year. Log each property.
+let car = {
+    brand : "Toyota",
+    model : "Corola",
+    Year : 2020
+}
+console.log(car.brand)
+console.log(car.model)
+console.log(car.Year)
+
+// 	2.	Add a new property color to the object.
+car.color = "White";
+console.log(car.color)
+
+// 	3.	Update the year to a new value.
+car.Year = 2025;
+console.log(car.Year);
+console.log(car)
+
+// 	4.	Delete the model property.
+delete car.model
+console.log(car)
+
+// 	5.	Write a function printObject(obj) that logs all key-value pairs using a loop.
+function printObject(obj){
+    for(let key in obj){
+        console.log(key + ":" + obj[key]);
+    }
+}
+printObject(car)
