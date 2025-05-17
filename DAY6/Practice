@@ -1,0 +1,41 @@
+//  Practice: Student Grade System
+
+// Problems:
+// 	1.	Create a student object with name, marks (array of numbers).
+// 	2.	Add a method calculateAverage() to compute the average mark.
+// 	3.	Add a method getGrade() to return:
+// 	•	"A" if average >= 90
+// 	•	"B" if average >= 75
+// 	•	"C" if average >= 60
+// 	•	"F" otherwise
+
+let student = {
+    name :"XYZ",
+    marks :[40,55,70,75,88],
+    calcAvg(){
+        let sum = 0
+        for(let i =0;i<this.marks.length;i++){
+         sum+= this.marks[i]
+        }
+        return sum/this.marks.length;
+    },
+    getGrade(){
+        let Avg = this.calcAvg();
+        if(Avg >=90){
+            console.log("A")
+        }
+        else if(Avg>=75){
+            console.log("B")
+        }
+        else if(Avg>=60){
+            console.log("C")
+        }
+        else{
+            console.log("F")
+        }
+    }
+}
+console.log(student.calcAvg())
+console.log(student.getGrade())
+
+
