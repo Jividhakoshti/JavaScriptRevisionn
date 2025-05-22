@@ -1,0 +1,42 @@
+//  3. Template Literals
+// Basic:
+// Convert this string concatenation into a template literal:
+const name = "John";
+const greeting = "Hello, " + name + "!";
+console.log(`Hello, ${name } !`)
+
+// Create a multi-line string with template literals.
+const Multistr = `This is multiline string.
+Here is first line.
+Here is second line.`
+console.log(Multistr)
+
+// Intermediate:
+// Embed expressions and ternary conditions in template literals:
+// const age = 20;
+// const msg = You are ${age >= 18 ? "an adult" : "a minor"};
+const marks = 60;
+const msg = `You ${marks>=60?"can apply":"cannot apply"}`
+console.log(msg)
+
+
+
+// Practical:
+// Write a function that returns a formatted string:
+
+// getUserInfo({name: "Alice", age: 22, city: "Delhi"});
+// Output: "Alice (22) from Delhi"
+
+function formatted({name,age,city}){
+    return `${name},${(age)} from ${city}`
+}
+console.log(formatted({name:"Alice",age:"22",city:"Delhi"}))
+
+// Create a string that lists all items in an array using a loop inside template literals
+let str = ["Red","Green","Blue","Yellow"];
+let lists = ` `;
+
+for(let i =0;i<str.length;i++){
+    lists +=`-${str[i]}\n`
+}
+console.log(lists)
