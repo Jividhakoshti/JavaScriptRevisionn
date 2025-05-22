@@ -1,0 +1,61 @@
+// //  2. Spread and Rest Operators
+// // Basic:
+// // Use spread to merge these arrays:
+// const a = [1, 2]; 
+// const b = [3, 4];
+
+// const mergedArray = [...a,...b];
+// console.log(mergedArray)
+
+
+
+// // Use rest in a function to accept any number of arguments and return their sum.
+// function ADD (...nums){
+//     let sum = 0;
+//     for(let i = 0;i<nums.length;i++){
+//         sum += nums[i];
+//     }
+//     return sum
+// }
+// console.log(ADD(1,2,3,4,5,6,7))
+
+// // Intermediate:
+// // Clone this object and update age:
+// const user = { name: "Max", age: 20 };
+
+// const newUser = {...user, age : 25};
+// console.log(newUser)
+
+
+// // Use rest to extract the first value and keep the rest in another array:
+// const array = [10,20,30,40,50];
+// const [first , ...rest] = array;
+// console.log(first)
+// console.log(rest)
+
+// // const values = [10, 20, 30, 40];
+// // Practical:
+// // Write a function that accepts any number of numbers and returns an object with min, max, and average.
+// function accept (...nums){
+//     let min = nums[0];
+//     let max = nums [0];
+//     let sum = 0
+//     for (let i =0;i<nums.length;i++){
+//         let num = nums[i];
+//         sum+= num;
+
+//         if(num<min){
+//             min = num;
+//         }
+//         if(num>max){
+//             max = num;
+//         }
+
+
+//     }
+//     const avg = sum /nums.length;
+//     return {min,max,avg}
+// }
+// console.log(accept(20,70,30,50,60));
+
+
