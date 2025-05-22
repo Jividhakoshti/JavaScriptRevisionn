@@ -1,0 +1,52 @@
+// //  1. Destructuring
+// // Basic:
+// // Destructure the name and age from this object:
+
+// const person = { name: "Alice", age: 25 };
+
+// // const {name,age}= person
+// // console.log(name,age)
+
+
+// // Destructure the first and third elements from this array:
+// const numbers = [10, 20, 30];
+// const [num1, ,num3] = numbers
+// console.log(num1,num3)
+
+
+// // Intermediate:
+// // Rename variables while destructuring:
+// // const user = { id: 1, username: "john_doe" };
+
+// // const {id : userId, username:uname} = user;
+// // console.log(userId, uname);
+
+
+// // Provide default values while destructuring:
+// const settings = { theme: "dark" };
+// // Destructure theme and fontSize = 14.
+
+// const {theme, fontSize = 14} = settings;
+// console.log(theme,fontSize)
+
+// // Nested destructuring:
+// const profile = {
+//   user: { name: "Sam", address: { city: "NYC", zip: 10001 } }
+// };
+
+// const {user : { name , address :{city}}} = profile
+// console.log(name,city)
+
+// // Practical:
+// // Write a function that takes an object like {name, age, country} and prints all three values using destructuring inside the function.
+// function PrintValues({name,age,country}){
+//     console.log(name,age,country)
+
+// }
+// PrintValues({name :'Alice',age:"20",country:"India"})
+
+// // Swap values of two variables using array destructuring.
+// let a = 20;
+// let b = 50;
+// [a,b] = [b,a];
+// console.log(a,b)
