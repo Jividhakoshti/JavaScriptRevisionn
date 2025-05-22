@@ -1,0 +1,73 @@
+// 4. Short Syntax (Property & Method Shorthand)
+// Basic:
+// Rewrite this using object property shorthand:
+
+// const name = "Sam";
+// const user = {name};
+// console.log(user)
+
+
+// Rewrite this method using method shorthand:
+// const obj = {
+//   sayHi: function () {
+//     console.log("Hi");
+//   }
+// };
+const obj = {
+    sayHi(){
+      console.log("Hi")
+    }
+}
+obj.sayHi()
+
+// Intermediate:
+// Create an object with shorthand and a computed property:
+const key = "status";
+const value = "active";
+
+const eg = {
+    [key]:value
+}
+console.log(eg);
+
+
+// Practical:
+// Create a factory function createUser(name, age) that returns:
+// { name, age, getInfo() { return ${name} is ${age} } }
+
+// function createUser(name,age){
+//     return{
+//     name,
+//     age,
+//     getInfo(){
+//         return `${name} is ${age}`
+//     }
+// }
+
+// }
+// const user1 = createUser("Alice","22")
+// console.log(user1.getInfo())
+
+
+// ❓ 5. Optional Chaining
+// Basic:
+// Access user.address.city safely:
+
+const user = { name: "John", address: null };
+
+console.log(user.address?.city)
+
+
+// Check if user.settings.notifications.email exists without error.
+const user1 = {settings:null}
+console.log(user1.settings?.notifications?.email)
+
+
+// Intermediate:
+// Combine optional chaining with nullish coalescing:
+// const theme = user?.settings?.theme ?? "light";
+const set = {};
+const theme = user?.settings?.theme ?? "light";
+console.log(theme)
+
+
