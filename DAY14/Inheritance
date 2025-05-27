@@ -1,0 +1,56 @@
+//  Q1. Create a parent class Animal and child class Dog.
+
+class Animal{
+    constructor (name){
+        this.name = name;
+    }
+    speak(){
+         return `${this.name} speakss`;
+    }
+}
+class Dog extends Animal{
+    barks(){
+     return `${this.name} barks`
+    }
+}
+const A = new Dog("Tommmy");
+console.log(A.speak());
+console.log(A.barks())
+
+//  Q2. Use super to call parent constructor.
+
+class Product{
+    constructor(type){
+        this.type = type;
+
+    }
+
+}
+class Amount extends Product{
+    constructor(type,price){
+        this.price = price;
+        super(type)
+    }
+
+}
+const p = new Product("xyz",1000);
+console.log(p)
+
+//Static keyWord
+//  Q1. Create a class MathUtil with a static method to add two numbers.
+
+class MathUtil{
+    static add(a,b){
+        return a+b;
+    }
+}
+console.log(MathUtil.add(56,11));
+
+
+// Q2. Create a static method to greet users.
+class Users{
+    static greet(name){
+        return`Hellooo, ${name} `
+    }
+}
+console.log(Users.greet("Alice"));
