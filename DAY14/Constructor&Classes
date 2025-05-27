@@ -1,0 +1,77 @@
+// // ✅ 1. Constructor Functions
+// // 🔹 Q1. Create a constructor function Car with brand and model.
+
+//  function Car(brand,model){
+//    this.brand = brand 
+//    this.model = model
+// }
+
+// const car1 = new Car("toyota","xyz");
+// console.log(car1);
+
+
+// // Q2. Add a method using prototype to show car details.
+// Car.prototype.showDetails = function(){
+//     console.log(`Brand : ${this.brand}`,`Model : ${this.model}`)
+// }
+// car1.showDetails()
+
+
+// //  Q3. Create a constructor Person and check if age > 18.
+// function Person (name,age){
+//     this.name = name;
+//     this.age = age;
+
+//     this.checkAge = function(){
+//         if(this.age>18){
+//             console.log("Adult")
+//         }
+//     }
+
+// }
+// const p1 = new Person("Alice","22");
+// p1.checkAge();
+
+// // Q4. Create multiple Book objects using constructor.
+
+// function Book (name, Author){
+//     this.name = name;
+//     this.Author = Author;
+
+// }
+// const b1 = new Book ("LearnJs","abc");
+// const b2 = new Book("React","xyz");
+
+// console.log(b1,b2)
+
+
+// //Classes
+// // Q1. Create a Student class with name and marks.
+
+// // 🔹 Q2. Add a method to display student info.
+// class Student{
+//    constructor(name,marks){
+//         this.name = name;
+//         this.marks = marks;
+//     }
+//     getinfo(){
+//        return `${this.name} ${this.marks}`
+//     }
+
+// }
+// const s1 = new Student("Alice",80)
+// console.log(s1.getinfo())
+
+
+// // Q2. Create a Rectangle class and calculate area.
+// class Rectangle{
+//     constructor (length,breadth){
+//         this.length = length;
+//         this.breadth = breadth;
+//     }
+//     area(){
+//         return this.length * this.breadth;
+//     }
+// }
+// const r1 = new Rectangle(2,3);
+// console.log(r1.area());
